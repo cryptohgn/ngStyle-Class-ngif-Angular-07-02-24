@@ -1,0 +1,29 @@
+<p [ngStyle]="estilosParrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+<div>
+    <button (click)="cambiaColor('red')">Cambiar</button>
+    <button (click)="cambiaColor('green')">Cambiar</button>
+    <button (click)="cambiaColor('blue')">Cambiar</button>
+</div>
+
+<div>
+    <input type="text" (input)="cambiaColorFondo($event)">
+</div>
+
+<div>
+    <select (change)="cambiaPadding($event)">
+        <option value="10">10px</option>
+        <option value="20">20px</option>
+        <option value="30">30px</option>
+        <option value="40">40px</option>
+    </select>
+</div>
+
+<!--
+
+    Ejer:
+    Cunado cambia la opcion del select que cambie el padding de un p
+
+    1 - Crear el Select
+    2 - Capturar el cambio de valor en el SELECT
+    3 - Modificar el padding del p 
+ -->
